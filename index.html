@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Silence AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Silence AI</h1>
+
+  <label>Area Type</label>
+  <select id="area">
+    <option value="residential">House / Apartment</option>
+    <option value="industrial">Industry</option>
+  </select>
+
+  <label>Time</label>
+  <select id="time">
+    <option value="morning">Morning</option>
+    <option value="day">Day</option>
+    <option value="night">Night</option>
+  </select>
+
+  <label>Traffic Level</label>
+  <input type="range" id="traffic" min="0" max="10">
+
+  <button onclick="predictNoise()">Analyze</button>
+
+  <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
